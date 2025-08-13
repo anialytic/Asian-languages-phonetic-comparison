@@ -1,10 +1,6 @@
 # відкрити файл
 import pandas as pd
 df = pd.read_excel("Dictionary-mini.xlsx", engine='openpyxl')
-print(df)
-
-# всі колонки з кількістю складів
-syllable_columns = [col for col in df.columns if "syllable" in col.lower()]
 
 # тільки ці колонки
 columns_to_show = ["syllable_zh", "syllable_ca", "syllable_ja", "syllable_ko", "Syllable_vi"]
