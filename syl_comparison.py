@@ -3,7 +3,7 @@ import pandas as pd
 df = pd.read_excel("Dictionary-mini.xlsx", engine='openpyxl')
 
 # тільки ці колонки
-columns_to_show = ["syllable_zh", "syllable_ca", "syllable_ja", "syllable_ko", "Syllable_vi"]
+columns_to_show = ["syllable_zh", "syllable_ca", "syllable_ja", "syllable_ko", "syllable_vi"]
 
 # перевірка збігу в рядку
 def has_syllable_match(row):
