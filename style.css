@@ -12,3 +12,10 @@ input {
     width: 350px;
 
 }
+
+div.column-section {
+    float: left;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 18%;
+}
