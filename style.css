@@ -1,8 +1,14 @@
 body {
     background-color: lightpink;
     color:#333;
-    font-size: 22 px;
+    font-size: 22px;
     font-weight: lighter;
-    text-align: center;
+    text-align: center
+    ;
     margin-top: 15px;
+}
+
+input {
+    width: 350px;
+
 }
