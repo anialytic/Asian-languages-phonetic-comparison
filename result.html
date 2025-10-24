@@ -2,73 +2,74 @@
 <html lang = "uk">
    
 <head>
-        <meta charset="UTF-8"> 
-        <title>Українсько-китайський словник</title>
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="style.css"/>
-         
-    </head>
+    <meta charset="UTF-8"> 
+    <title>Українсько-китайський словник</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css"/>
+</head>
  
-    <body>
-        <header>
-         <h1>Пошук слова</h1>
-         <p>в українсько-китайському словнику</p>
-         <hr>
-         </header>
-<!--        <nav>
-            <ul>
-                <li>
-                    <a href="#html"><</a>
-                </li>
-            </ul>
-        </nav>
-        <hr>-->
-        <main>
-            <form action = "httpbin.org/get" method="get">
-                <img src="3color cat.png" width="5%">
-                <fieldset>
-                    <legend>Пошук</legend>
-                    <input type="text" name="search" id="message" placeholder="Пошук"> 
-                    <button type="submit">Пошук</button>
-                </fieldset>
-            </form>
-            <br>
-            <div class="column-section">
-                <h2>Chinese</h2>
-            </div>
-            <dl>
-                <dt>ієрогліф</dt>
-                <dd><strong>звучання</strong> 
-                    <br>переклад
-                    <br> &nbsp;&nbsp;&nbsp;приклад 1
-                    <br> &nbsp;&nbsp;&nbsp;приклад 2
-                    <br> &nbsp;&nbsp;&nbsp;приклад 3
-                </dd>
-            </dl>
-            <hr>
-            <dl>
-                <dt>ієрогліф</dt>
-                <dd><strong>звучання</strong>
-                    <br>переклад
-                    <br> &nbsp;&nbsp;&nbsp;приклад 1
-                    <br> &nbsp;&nbsp;&nbsp;приклад 2
-                    <br> &nbsp;&nbsp;&nbsp;приклад 3
-                </dd>
-            </dl>
-            <hr>
-            <dl>
-                <dt>ієрогліф</dt>
-                <dd><strong>звучання</strong>
-                    <br>переклад
-                    <br> &nbsp;&nbsp;&nbsp;приклад 1
-                    <br> &nbsp;&nbsp;&nbsp;приклад 2
-                    <br> &nbsp;&nbsp;&nbsp;приклад 3
-                </dd>
-            </dl>
-            <hr> 
-        </main>   
+<body>
+    <header>
+        <div class="title">
+            <h1>Пошук слова</h1>
+            <p>в українсько-китайському словнику</p>
+        </div>
+        <hr>
+    </header>
+    <main>
+        <form action = "httpbin.org/get" method="get">
+            <img class="logo-img" src="3color cat.png" width="5%">
+            <fieldset>
+                <legend>Пошук</legend>
+                <input class="search-input" type="text" name="search" id="message" placeholder="Пошук"> 
+                <button type="submit">Пошук</button>
+            </fieldset>
+        </form>
+        <br>
+        <div class="row">
+        <div class="column">
+        <h2>Chinese</h2>
+        <dl>
+            <dt>ієрогліф</dt>
+            <dd><strong>звучання</strong> 
+                <br>переклад
+                <br> &nbsp;&nbsp;&nbsp;приклад 1
+                <br> &nbsp;&nbsp;&nbsp;приклад 2
+                <br> &nbsp;&nbsp;&nbsp;приклад 3
+            </dd>
+        </dl>
+        </div>
+        <div class="column">
+        <h2>Japanese</h2>
+        <dl>
+            <dt>ієрогліф</dt>
+            <dd><strong>звучання</strong>
+                <br>переклад
+                <br> &nbsp;&nbsp;&nbsp;приклад 1
+                <br> &nbsp;&nbsp;&nbsp;приклад 2
+                <br> &nbsp;&nbsp;&nbsp;приклад 3
+            </dd>
+        </dl>
+        </div>
+        <div class="column">
+        <h2>Korean</h2>
+        <dl>
+            <dt>ієрогліф</dt>
+            <dd><strong>звучання</strong>
+                <br>переклад
+                <br> &nbsp;&nbsp;&nbsp;приклад 1
+                <br> &nbsp;&nbsp;&nbsp;приклад 2
+                <br> &nbsp;&nbsp;&nbsp;приклад 3
+            </dd>
+        </dl>
+        </div>
+        </div>
+    <hr>
+    </main>   
+    <div class="footer">
         <footer>&lt;&lt;&lt;&copy; <a href="about.html">Українсько-китайський словник</a>&gt;&gt;&gt;
-            <p><a href="#">Вгору</a></p>
+        <p><a href="#">Вгору</a></p>
         </footer>
+    </div>    
     </body>
 </html>

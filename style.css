@@ -2,20 +2,43 @@ body {
     background-color: lightpink;
     color:#333;
     font-size: 22px;
-    font-weight: lighter;
-    text-align: center
-    ;
-    margin-top: 15px;
+ /*font-weight: lighter;
+    text-align: center;
+    margin-top: 15px;*/
 }
 
-input {
+.title {
+    display: block;
+    width: auto;
+    text-align: center;
+}
+
+.logo-img {
+    display: block;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-input {
+    display: block;
     width: 350px;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
-div.column-section {
-    float: left;
-    padding-left: 1%;
-    padding-right: 1%;
-    width: 18%;
+.row {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.column {
+  flex: 1;
+  margin: 0 1%;
+  box-sizing: border-box;
+}
+
+.footer {
+    clear: both;
+    margin-top: 150px;
 }
