@@ -18,6 +18,7 @@ body {
     text-align: center;
 }
 
+/*Виглядає погано, спробувати зробити лого в шапці, а посередині пошуковий запит*/
 .cat-search{
     display: flex;
     justify-content: space-around;
