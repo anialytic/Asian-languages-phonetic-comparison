@@ -1,3 +1,8 @@
+/*
+один основний колір (primary) і два допоміжні (secondary + background)
+1–2 шрифти максимум, один - заголовок , другий текст
+*/
+
 body {
     background-color:pink;
     color:#333;
@@ -35,7 +40,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     margin-top: 10px;
-}
+} /*кнопка має відрізнятись, бути контрасною на спокійному фоні*/
 
 .row {
   display: flex;
