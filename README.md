@@ -62,7 +62,92 @@
 - 🈚️ Візуалізація найпоширеніших слів (за кластерами/періодами)  
 - 🈚️ Додати в рідмі англ та кит переклад
 - 🈚️ Аналіз частотності ієрогліфів (потенційно новий репо)
-- 🈚️ Бізнес-кейс? визначити емоції у відгуках кит мовою (потенційно новий репо)  
+- 🈚️ Бізнес-кейс? визначити емоції у відгуках кит мовою (потенційно новий репо)
+- 
+
+
+СХЕМА  
+
+Table: chinese_dictionary
+────────────────────────────────────────────────────────────
+id (PK)            BIGSERIAL
+────────────────────────────────────────────────────────────
+chinese_tr         TEXT        — Traditional Chinese
+chinese_simple     TEXT        — Simplified Chinese
+pinyin             TEXT        — Pinyin (latin)
+zhuyin             TEXT        — Zhuyin (Bopomofo)
+
+translation_uk     TEXT        — Ukrainian translation
+translation_en     TEXT        — English translation
+
+examples           TEXT        — Usage examples
+notes              TEXT        — Linguistic notes
+
+measure_words      TEXT        — Measure words (for nouns)
+part_of_speech     VARCHAR(30) — noun, verb, adj, etc.
+
+level              VARCHAR(20) — HSK1, HSK2, ...
+tags               TEXT        — comma-separated tags
+
+audio_url          TEXT        — Pronunciation audio URL
+
+status             VARCHAR(20) — draft | published
+created_at         TIMESTAMP   — Record creation time
+updated_at         TIMESTAMP   — Last update time
+────────────────────────────────────────────────────────────
+
+
+Table: japanese_dictionary
+────────────────────────────────────────────────────────────
+id (PK)            BIGSERIAL
+────────────────────────────────────────────────────────────
+kanji             TEXT        — Kanji (може бути NULL)
+hiragana          TEXT        — Hiragana
+katakana          TEXT        — Katakana
+romaji            TEXT        — Latin transcription
+
+translation_uk    TEXT        — Ukrainian translation
+translation_en    TEXT        — English translation
+
+examples          TEXT        — Usage examples
+notes             TEXT        — Linguistic notes
+
+part_of_speech    VARCHAR(30) — noun, verb, adj, etc.
+
+level             VARCHAR(20) — JLPT-N5, N4, etc.
+tags              TEXT        — comma-separated tags
+
+audio_url         TEXT        — Pronunciation audio URL
+
+status            VARCHAR(20) — draft | published
+created_at        TIMESTAMP   — Record creation time
+updated_at        TIMESTAMP   — Last update time
+────────────────────────────────────────────────────────────
+
+Table: korean_dictionary
+────────────────────────────────────────────────────────────
+id (PK)            BIGSERIAL
+────────────────────────────────────────────────────────────
+korean            TEXT        — Korean word
+romanization      TEXT        — Latin transcription
+
+translation_uk    TEXT        — Ukrainian translation
+translation_en    TEXT        — English translation
+
+examples          TEXT        — Usage examples
+notes             TEXT        — Linguistic notes
+
+part_of_speech    VARCHAR(30) — noun, verb, adj, etc.
+
+level             VARCHAR(20) — TOPIK1, TOPIK2, etc.
+tags              TEXT        — comma-separated tags
+
+audio_url         TEXT        — Pronunciation audio URL
+
+status            VARCHAR(20) — draft | published
+created_at        TIMESTAMP   — Record creation time
+updated_at        TIMESTAMP   — Last update time
+────────────────────────────────────────────────────────────
 - 🈚️ Як витягувати дані автоматично?
 - 🈚️ Чи можна переписати код з пошуку схожості звучання з використанням регулярних виразів?
 - 🈶 Chao_tone_letters.py: зробити незалежним від таблиці, він має самостійно розпізнавати систему
