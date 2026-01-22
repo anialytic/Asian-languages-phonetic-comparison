@@ -14,7 +14,7 @@
 - **Бібліотеки:** pandas, (планується: levenshtein, librosa для аудіо/візуалізації)  
 - **Формат даних:** xlsx, json  
 - **Frontend:** html, css, js, figma(дизайн)  
-- **Backend:**  ЩО ОБРАТИ?????????? python + flask, node.js js+fetch, node.js+express, python+fastAPI, PHP+Laravel???  
+- **Backend:**  python + flask 
 
 ## Mindmap
 Словник: 
