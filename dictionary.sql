@@ -1,16 +1,13 @@
 select *
-from chinese_dictionary
+from korean_dictionary
 
-INSERT INTO chinese_dictionary (
-    chinese_tr,
-    chinese_simple,
-    pinyin,
-    zhuyin,
+INSERT INTO korean_dictionary (
+    korean,
+    romanization,
     translation_uk,
     translation_en,
     examples,
     notes,
-    measure_words,
     part_of_speech,
     level,
     tags,
@@ -20,24 +17,17 @@ INSERT INTO chinese_dictionary (
     updated_at
 )
 VALUES (
-    '水',
-    '水',
-    'shuǐ',
-    'ㄕㄨㄟˇ',
+    '물',
+    'mul',
     'вода',
     'water',
-    '水很重要。
-Water is very important.
-
-我每天喝很多水。
-I drink a lot of water every day.',
-    'Базове слово для позначення води; часто використовується у складних словах.',
-    NULL,
+    '물을 많이 마셔요.',
+    'Базове слово для позначення води',
     'noun',
-    'HSK1',
+    'A1',
     'nature',
     NULL,
-    'draft',
+    'active',
     NOW(),
     NOW()
 );
